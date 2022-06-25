@@ -290,15 +290,17 @@ tr {
 }
 @media (max-width: 380px) {
   .comment {
-    margin-left: 1.7rem;
+    padding: 0%;
+    margin-left: 2rem;
   }
+
   .input,
   .board,
   .show-answer {
     width: 100%;
   }
-  .show-answer {
-    width: 110%;
+  .start-quiz {
+    width: 100%;
   }
   table {
     width: 70%;
