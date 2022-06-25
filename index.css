@@ -6,7 +6,7 @@
 body {
   padding: 5rem 20rem;
   position: relative;
-  background-color: #fff;
+  background-color: #f7f7f7;
 }
 /* header section */
 .game {
@@ -84,12 +84,7 @@ body {
   width: 82%;
   border: none;
   padding: 0 0.5rem;
-  color: #f7f7f7;
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(170, 153, 153, 0.551),
-    rgba(12, 1, 1, 0.585)
-  );
+  color: black;
 }
 @media (max-width: 600px) {
   .text {
@@ -105,6 +100,9 @@ body {
 }
 .text:placeholder-shown {
   padding-left: 0.5rem;
+}
+.text::placeholder {
+  color: black;
 }
 .text:focus {
   outline: none;
@@ -176,14 +174,15 @@ tr {
 .give-up {
   display: inline-block;
   padding: 1rem 1rem;
-  background-color: rgba(0, 0, 0, 0.26);
+  background-color: black;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .show-status {
   border: 1px solid rgba(0, 0, 0, 0.365);
   padding: 0.5rem 1rem;
   opacity: 0;
+  border: none;
 }
 /* give up section */
 .give-up-section {
@@ -193,7 +192,7 @@ tr {
 .try-again,
 .show-answer-btn {
   display: inline-block;
-  background-color: rgba(0, 0, 0, 0.461);
+  background-color: black;
   color: white;
   padding: 0.5rem 1rem;
   border: none;
@@ -203,7 +202,7 @@ tr {
 .comment-score-1,
 .comment-score-2 {
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 2rem;
   margin-top: 1rem;
 }
 .comment {
@@ -270,11 +269,16 @@ tr {
   .show-status {
     width: 76%;
     font-size: 2rem;
+    border: none;
   }
 }
 @media (max-width: 900px) {
   .comment {
     margin-left: -15rem;
+  }
+  .show-answer,
+  .comment {
+    font-size: 1.7rem;
   }
 }
 @media (max-width: 280px) {
