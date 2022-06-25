@@ -55,7 +55,7 @@ body {
 }
 @media (max-width: 900px) {
   .start-quiz {
-    width: 80%;
+    width: 85%;
     font-size: 2rem;
     padding: 1rem 0;
   }
@@ -258,7 +258,7 @@ tr {
   .input,
   .board,
   .show-answer {
-    width: 80%;
+    width: 85%;
   }
   .submit {
     text-align: center;
