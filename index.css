@@ -6,11 +6,7 @@
 body {
   padding: 5rem 20rem;
   position: relative;
-  background-image: linear-gradient(
-    to top left,
-    rgba(132, 53, 53, 0.551),
-    rgba(10, 4, 4, 0.585)
-  );
+  background-color: #fff;
 }
 /* header section */
 .game {
