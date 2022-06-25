@@ -281,9 +281,16 @@ tr {
     font-size: 1.7rem;
   }
 }
-@media (max-width: 280px) {
+
+@media (max-width: 900px) {
+  .footer {
+    margin-bottom: 5rem;
+    padding: 3rem 2rem;
+  }
+}
+@media (max-width: 380px) {
   .comment {
-    margin-left: 0rem;
+    margin-left: 1.7rem;
   }
   .input,
   .board,
@@ -298,11 +305,5 @@ tr {
   }
   td {
     font-size: 1.7rem;
-  }
-}
-@media (max-width: 900px) {
-  .footer {
-    margin-bottom: 5rem;
-    padding: 3rem 2rem;
   }
 }
