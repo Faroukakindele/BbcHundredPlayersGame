@@ -202,7 +202,7 @@ tr {
 .comment-score-1,
 .comment-score-2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 1rem;
 }
 .comment {
@@ -267,7 +267,7 @@ tr {
     display: inline-block;
   }
   .show-status {
-    width: 76%;
+    width: 82%;
     font-size: 2rem;
     border: none;
   }
@@ -291,7 +291,7 @@ tr {
 @media (max-width: 400px) {
   .comment {
     padding: 0%;
-    margin-left: -2rem;
+    margin-left: -2.5rem;
     margin-top: 2rem;
   }
 
@@ -308,5 +308,10 @@ tr {
   }
   td {
     font-size: 1.7rem;
+  }
+  .show-status {
+    width: 95%;
+    font-size: 2rem;
+    border: none;
   }
 }
