@@ -291,7 +291,8 @@ tr {
 @media (max-width: 400px) {
   .comment {
     padding: 0%;
-    margin-left: 1.5rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
   }
 
   .input,
