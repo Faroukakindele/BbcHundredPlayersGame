@@ -283,12 +283,12 @@ tr {
 }
 @media (max-width: 280px) {
   .comment {
-    margin-left: -5rem;
+    margin-left: 0rem;
   }
   .input,
   .board,
   .show-answer {
-    width: 100%;
+    width: 95%;
   }
   table {
     width: 70%;
