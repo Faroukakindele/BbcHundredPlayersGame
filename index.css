@@ -24,7 +24,7 @@ body {
   padding-top: 1rem;
 }
 .how-to-play-button {
-  background-color: rgba(37, 2, 2, 0.893);
+  background-color: black;
   border: none;
   text-decoration: none;
   font-size: 1rem;
@@ -47,10 +47,11 @@ body {
 }
 .start-quiz {
   text-align: center;
-  background-color: rgba(231, 195, 14, 0.338);
+  background-color: black;
   font-size: 1.5rem;
   text-transform: capitalize;
   padding: 0.5rem 0;
+  color: white;
 }
 @media (max-width: 900px) {
   .start-quiz {
@@ -70,7 +71,6 @@ body {
 
 .input {
   margin-top: 0.5rem;
-  box-shadow: 0 1rem 3rem 1.5rem rgba(0, 0, 0, 0.276);
 }
 .boldness {
   font-weight: lighter;
@@ -84,6 +84,7 @@ body {
   width: 82%;
   border: none;
   padding: 0 0.5rem;
+  color: #f7f7f7;
   background-image: linear-gradient(
     to right bottom,
     rgba(170, 153, 153, 0.551),
@@ -110,8 +111,9 @@ body {
 }
 .submit {
   text-decoration: none;
-  background-color: rgba(231, 195, 14, 0.338);
+  background-color: black;
   padding: 0.5rem 2rem;
+  color: white;
 }
 /* Extra features */
 .hide {
@@ -207,6 +209,10 @@ tr {
 .comment {
   margin-top: -3rem;
 }
+.footer {
+  padding: 3rem 2rem;
+  font-size: 2rem;
+}
 @media (max-width: 900px) {
   .comment {
     padding-left: -15rem;
@@ -290,5 +296,6 @@ tr {
 @media (max-width: 900px) {
   .footer {
     margin-bottom: 5rem;
+    padding: 3rem 2rem;
   }
 }
