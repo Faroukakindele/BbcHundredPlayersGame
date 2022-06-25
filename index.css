@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+body {
+  padding: 5rem 20rem;
+  position: relative;
+  background-image: linear-gradient(
+    to top left,
+    rgba(132, 53, 53, 0.551),
+    rgba(10, 4, 4, 0.585)
+  );
+}
+/* header section */
+.game {
+  margin: 0 auto;
+}
+.header {
+  font-size: 2rem;
+}
+@media (max-width: 900px) {
+  .header {
+    font-size: 2.5rem;
+  }
+}
+.how-to-play {
+  padding-top: 1rem;
+}
+.how-to-play-button {
+  background-color: rgba(37, 2, 2, 0.893);
+  border: none;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: #f7f7f7;
+  margin-bottom: 1rem;
+}
+.how-to-play-text {
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.board {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.score-board {
+  font-size: 1.5rem;
+}
+.start-quiz {
+  text-align: center;
+  background-color: rgba(231, 195, 14, 0.338);
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  padding: 0.5rem 0;
+}
+@media (max-width: 900px) {
+  .start-quiz {
+    width: 80%;
+    font-size: 2rem;
+    padding: 1rem 0;
+  }
+}
+.score {
+  font-weight: bold;
+}
+.show-answer,
+.input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  margin-top: 0.5rem;
+  box-shadow: 0 1rem 3rem 1.5rem rgba(0, 0, 0, 0.276);
+}
+.boldness {
+  font-weight: lighter;
+}
+.time {
+  font-weight: bold;
+  padding-right: 0.3rem;
+  font-size: 1.5rem;
+}
+.text {
+  width: 82%;
+  border: none;
+  padding: 0 0.5rem;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(170, 153, 153, 0.551),
+    rgba(12, 1, 1, 0.585)
+  );
+}
+@media (max-width: 600px) {
+  .text {
+    width: 100%;
+    padding: 1rem;
+  }
+  .time {
+    font-size: 2rem;
+  }
+  .score-board {
+    font-size: 2rem;
+  }
+}
+.text:placeholder-shown {
+  padding-left: 0.5rem;
+}
+.text:focus {
+  outline: none;
+}
+.submit {
+  text-decoration: none;
+  background-color: rgba(231, 195, 14, 0.338);
+  padding: 0.5rem 2rem;
+}
+/* Extra features */
+.hide {
+  visibility: hidden;
+}
+.hidden {
+  display: none;
+}
+
+/* table */
+table {
+  max-width: fit-content;
+  min-width: auto;
+  width: 100%;
+
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+@media (max-width: 900px) {
+  table {
+    width: 80%;
+  }
+}
+th {
+  border: none;
+  padding: 0.5rem 0.5rem;
+}
+@media (max-width: 900px) {
+  th {
+    font-size: 1.5rem;
+  }
+}
+thead {
+  background-color: #f7f7f7;
+}
+td {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.14);
+  padding: 5px 2px;
+}
+@media (max-width: 900px) {
+  td,
+  .how-to-play-button,
+  .how-to-play-text {
+    font-size: 2rem;
+  }
+}
+tr {
+  border-collapse: separate;
+}
+.hint {
+  text-transform: capitalize;
+}
+.answer,
+.color {
+  color: transparent;
+}
+.footer {
+  margin-top: 3rem;
+}
+.give-up {
+  display: inline-block;
+  padding: 1rem 1rem;
+  background-color: rgba(0, 0, 0, 0.26);
+  text-decoration: none;
+  color: black;
+}
+.show-status {
+  border: 1px solid rgba(0, 0, 0, 0.365);
+  padding: 0.5rem 1rem;
+  opacity: 0;
+}
+/* give up section */
+.give-up-section {
+  margin-top: -4.5rem;
+}
+
+.try-again,
+.show-answer-btn {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.461);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  text-decoration: none;
+}
+.comment,
+.comment-score-1,
+.comment-score-2 {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+.comment {
+  margin-top: -3rem;
+}
+@media (max-width: 900px) {
+  .comment {
+    padding-left: -15rem;
+  }
+}
+.comment-score-1,
+.score-2 {
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  body {
+    font-size: 65%;
+  }
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 56%;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 1200px) {
+  body {
+    padding: 3rem 15rem;
+  }
+}
+@media (max-width: 900px) {
+  body {
+    padding: 2rem 8rem;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    padding: 1rem 5rem;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .input,
+  .board,
+  .show-answer {
+    width: 80%;
+  }
+  .submit {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    display: inline-block;
+  }
+  .show-status {
+    width: 76%;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 900px) {
+  .comment {
+    margin-left: -15rem;
+  }
+}
+@media (max-width: 280px) {
+  .comment {
+    margin-left: -5rem;
+  }
+  .input,
+  .board,
+  .show-answer {
+    width: 100%;
+  }
+  table {
+    width: 70%;
+  }
+  td {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 900px) {
+  .footer {
+    margin-bottom: 5rem;
+  }
+}
