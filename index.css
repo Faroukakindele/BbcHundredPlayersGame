@@ -288,7 +288,10 @@ tr {
   .input,
   .board,
   .show-answer {
-    width: 95%;
+    width: 100%;
+  }
+  .show-answer {
+    width: 110%;
   }
   table {
     width: 70%;
