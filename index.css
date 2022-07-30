@@ -147,8 +147,11 @@ th {
 thead {
   background-color: #f7f7f7;
 }
+tr {
+  outline: 0.5px solid rgba(0, 0, 0, 0.049);
+}
 td {
-  border-bottom: 0.5px solid rgba(0, 0, 0, 0.14);
+  /* border-bottom: 0.5px solid rgba(0, 0, 0, 0.14); */
   padding: 5px 2px;
 }
 @media (max-width: 900px) {
@@ -166,7 +169,7 @@ tr {
 }
 .answer,
 .color {
-  color: transparent;
+  visibility: hidden;
 }
 .footer {
   margin-top: 3rem;

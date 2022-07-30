@@ -234,7 +234,7 @@ const alertStatusCorrect = (userInput, index) => {
   // show answer
   // showing status
 
-  userInput[index].style.color = "black";
+  userInput[index].style.visibility = "visible";
   const markers = document.querySelectorAll(".marker");
   markers[index].textContent = "✅";
   // show status correct
