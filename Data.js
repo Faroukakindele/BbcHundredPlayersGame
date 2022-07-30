@@ -128,8 +128,23 @@ let score = 0;
 let toggle = false;
 const newArray = [];
 let intervalKey;
-let parsed;
+let parsed = 0;
 // Functions
+
+function finalComment() {
+  if (parsed === 20) {
+    commentScore2.textContent = "Congratulations 🔥🔥🔥🔥 ";
+    tryAgainBtn.textContent = "play again";
+    listing();
+    showAnswers.classList.add("hide");
+  }
+
+  if (parsed < 10) {
+    score1[0].style.color = score1[1].style.color = "red";
+  } else {
+    score1[0].style.color = score1[1].style.color = "black";
+  }
+}
 
 function listing() {
   clearInterval(intervalKey);
@@ -287,17 +302,11 @@ const updatingScore = () => {
 
     // clear Input field after each operation
     userAnswer.value = "";
-    if (parsed === 20) {
-      commentScore2.textContent = "Congratulations 🔥🔥🔥🔥 ";
-      tryAgainBtn.textContent = "play again";
-      listing();
-      showAnswers.classList.add("hide");
-    }
-    if (parsed < 10) {
-      score1[0].style.color = score1[1].style.color = "red";
-    }
+
+    finalComment();
   });
 };
+
 updatingScore();
 
 //The Give-up button
@@ -317,8 +326,7 @@ const showAnswer = () => {
   showAnswers.addEventListener("click", (e) => {
     e.preventDefault();
     const answers = document.querySelectorAll(".answer");
-    [...answers].forEach((e) => (e.style.color = "black"));
-    [...answers].forEach((e) => e.classList.add("boldness"));
+    [...answers].forEach((e) => (e.style.visibility = "visible"));
   });
 };
 showAnswer();
@@ -331,3 +339,4 @@ const tryAgain = () => {
   });
 };
 tryAgain();
+finalComment();
